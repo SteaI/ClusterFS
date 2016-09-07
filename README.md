@@ -73,7 +73,7 @@ file.RemoveCluster(<index>);
 **클러스터 트랜잭션**
 ```
 #!c#
-using (file.BeginTransaaction())
+using (file.BeginTransaction())
 {
     for (int i = 0; i < 10000; i++)
     {
