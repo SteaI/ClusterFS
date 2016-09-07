@@ -64,6 +64,7 @@
     <Compile Include="CFSTransaction.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="LICENSE" />
     <Content Include="Reference\cfs format.png" />
     <Content Include="Reference\cluster architecture.png" />
   </ItemGroup>

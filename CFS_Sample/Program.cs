@@ -3,10 +3,8 @@ using CFS.IO;
 using System;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.Reflection;
 using System.Runtime.Serialization;
-using System.Runtime.Serialization.Formatters.Binary;
 
 namespace CFS_Sample
 {
@@ -116,17 +114,6 @@ namespace CFS_Sample
         {
             public string Name { get; set; }
             public int Age { get; set; }
-
-            public Person(string name, int age)
-            {
-                this.Name = name;
-                this.Age = age;
-            }
-
-            public override string ToString()
-            {
-                return $"{Name} {Age}세";
-            }
         }
 
         class PersonSerializer : IClusterSerializable<Person>
@@ -143,7 +130,11 @@ namespace CFS_Sample
 
             public Person Deserialize(ClusterStreamHolder holder)
             {
-                return new Person(holder.ReadString(), holder.ReadInt32());
+                return new Person()
+                {
+                    Name = holder.ReadString(),
+                    Age = holder.ReadInt32()
+                };
             }
 
             public void Serialize(Person obj, ClusterStreamHolder holder)
@@ -159,6 +150,7 @@ namespace CFS_Sample
 
             return;
             var file = CFSFile.Create("d.bin", "v1.0", 16, 4, 10);
+
             var ps = new PersonSerializer();
 
             Stopwatch sw = new Stopwatch();
