@@ -3,6 +3,11 @@
 ### Cluster File System ###
 클러스터 시스템을 구현해 바이너리를 셀단위로 조작할 수 있는 파일 포맷입니다.
 
+
+### 포맷 구조 ###
+![cfs format.png](https://bitbucket.org/repo/9LX4j5/images/900675021-cfs%20format.png)
+
+
 ### 기본 예제 ###
 
 **스트림 생성하기**
