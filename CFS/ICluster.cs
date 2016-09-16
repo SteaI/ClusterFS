@@ -1,4 +1,4 @@
-﻿namespace CFS
+﻿namespace ClusterFS
 {
     /// <summary>
     /// 클러스터 인터페이스입니다.

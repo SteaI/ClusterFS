@@ -1,4 +1,4 @@
-﻿namespace CFS
+﻿namespace ClusterFS
 {
     /// <summary>
     /// 아키텍쳐 열거형입니다.

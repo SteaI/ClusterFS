@@ -2,7 +2,7 @@
 using System.IO;
 using System.Text;
 
-namespace CFS
+namespace ClusterFS
 {
     /// <summary>
     /// 바이트 시퀀스에 대한 제한된 뷰를 제공합니다.

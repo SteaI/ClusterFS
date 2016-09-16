@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace CFS
+namespace ClusterFS
 {
     /// <summary>
     /// Cluster File System의 헤더 구조체 입니다.

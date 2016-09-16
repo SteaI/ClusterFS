@@ -1,12 +1,12 @@
-﻿using CFS.Exceptions;
-using CFS.Extension;
+﻿using ClusterFS.Exceptions;
+using ClusterFS.Extension;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace CFS
+namespace ClusterFS
 {
     /// <summary>
     /// 스트림 대해 Cluster File System 포맷을 제공하여 읽기/쓰기 작업을 모두 지원합니다.

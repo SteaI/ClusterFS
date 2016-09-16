@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace CFS.Extension
+namespace ClusterFS.Extension
 {
     internal static class ArrayEx
     {

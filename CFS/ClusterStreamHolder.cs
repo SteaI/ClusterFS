@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace CFS
+namespace ClusterFS
 {
     /// <summary>
     /// 클러스터에대한 바이너리 읽기,쓰기를 제공합니다.

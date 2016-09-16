@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1531FA97-155D-4D60-AD14-9CB0DA9234E1}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{A3AE6F8B-E18F-4889-9684-5C9321FCD858}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ClusterFS</RootNamespace>
-    <AssemblyName>ClusterFS</AssemblyName>
+    <RootNamespace>CFS_Sample</RootNamespace>
+    <AssemblyName>CFS_Sample</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -20,18 +21,15 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <DocumentationFile>bin\Debug\ClusterFS.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\ClusterFS.xml</DocumentationFile>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -44,29 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Architecture.cs" />
-    <Compile Include="IO\CFSFile.cs" />
-    <Compile Include="CFSHeader.cs" />
-    <Compile Include="CFSStream.cs" />
-    <Compile Include="ClusterProvider.cs" />
-    <Compile Include="ClusterStreamHolder.cs" />
-    <Compile Include="ClusterSurface.cs" />
-    <Compile Include="Constant.cs" />
-    <Compile Include="Exceptions\CFSException.cs" />
-    <Compile Include="Exceptions\ClusterNotFoundException.cs" />
-    <Compile Include="Exceptions\HeaderNotFoundException.cs" />
-    <Compile Include="Extension\ArrayEx.cs" />
-    <Compile Include="Extension\StreamEx.cs" />
-    <Compile Include="FixedStream.cs" />
-    <Compile Include="ICluster.cs" />
-    <Compile Include="IO\IClusterSerializable.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="CFSTransaction.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="LICENSE" />
-    <Content Include="Reference\cfs format.png" />
-    <Content Include="Reference\cluster architecture.png" />
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CFS\CFS.csproj">
+      <Project>{1531fa97-155d-4d60-ad14-9cb0da9234e1}</Project>
+      <Name>CFS</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

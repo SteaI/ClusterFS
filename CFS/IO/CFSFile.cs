@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace CFS.IO
+namespace ClusterFS.IO
 {
     /// <summary>
     /// 포맷에 대한 클러스터 생성, 삭제 및 읽기를 제공하는 <see cref="CFSFile"/> 개체 만들기를 지원합니다.

@@ -1,4 +1,4 @@
-﻿namespace CFS
+﻿namespace ClusterFS
 {
     struct ClusterSurface : ICluster
     {

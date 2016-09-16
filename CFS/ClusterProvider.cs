@@ -1,4 +1,4 @@
-﻿namespace CFS
+﻿namespace ClusterFS
 {
     /// <summary>
     /// 클러스터를 생성 및 삭제를 제공합니다.

@@ -1,9 +1,9 @@
-﻿using CFS.Exceptions;
+﻿using ClusterFS.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace CFS
+namespace ClusterFS
 {
     /// <summary>
     /// 개념적인 계층을 위한 트랜잭션을 나타내는 클래스입니다.

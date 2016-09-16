@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CFS.Exceptions
+namespace ClusterFS.Exceptions
 {
     class CFSException : Exception
     {

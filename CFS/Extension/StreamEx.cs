@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace CFS.Extension
+namespace ClusterFS.Extension
 {
     internal static class StreamEx
     {

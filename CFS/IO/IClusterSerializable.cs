@@ -1,4 +1,4 @@
-﻿namespace CFS.IO
+﻿namespace ClusterFS.IO
 {
     public interface IClusterSerializable<T>
     {
