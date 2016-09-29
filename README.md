@@ -1,5 +1,10 @@
 # README #
 
+
+### 피드백 ###
+develope_e@naver.com
+
+
 ### Cluster File System ###
 클러스터 시스템을 구현해 바이너리를 셀단위로 조작할 수 있는 파일 포맷입니다.
 
