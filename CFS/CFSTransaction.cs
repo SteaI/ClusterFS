@@ -10,6 +10,11 @@ namespace ClusterFS
     /// </summary>
     public class CFSTransaction : ClusterProvider, IDisposable
     {
+		public static class Config
+		{
+			public static string BaseDirectory { get; set; }
+		}
+
         internal ClusterStreamHolder StreamHolder { get; }
         internal CFSStream BaseStream { get; }
         internal FileStream Stream { get; }
@@ -124,7 +129,7 @@ namespace ClusterFS
 
             for (int i = 0; true; i++)
             {
-                fileName = $"~cfs_{i}.tmp";
+				fileName = $"{Config.BaseDirectory}~cfs_{i}.tmp";
 
                 if (!File.Exists(fileName))
                     break;
